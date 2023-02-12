@@ -1,7 +1,10 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div className="app">
       <div className="homepage">
+        <Navbar />
         <div className="homepage-content">
           <div className="homepage-about">
             <p className="homepage-about-travel">SO, YOU WANT TO TRAVEL TO</p>
