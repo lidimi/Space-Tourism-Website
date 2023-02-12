@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: hsl(230, 35%, 7%);
+  --pale-blue: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+}
+button {
+  font-family: inherit;
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* HOMEPAGE  */
+
+.homepage {
+  height: 100vh;
+  background-image: url(./assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.homepage-about {
+  max-width: 30%;
+  color: var(--pale-blue);
+}
+
+.homepage-about-travel {
+  font-size: 1.75rem;
+  letter-spacing: 4.5px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.homepage-about h1 {
+  color: var(--white);
+  margin: 1.5rem 0;
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.4rem;
+}
+
+.homepage-about-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.homepage-btn {
+  display: block;
+  width: 17rem;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 50%;
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* NAVBAR  */
