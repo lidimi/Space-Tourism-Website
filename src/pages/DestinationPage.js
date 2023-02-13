@@ -1,10 +1,16 @@
 import data from "../data.json";
 import Navbar from "../components/Navbar";
 import Destination from "../components/Destination";
+import { useState } from "react";
 
 function DestinationPage() {
+  const [destination, setDestination] = useState(0);
+
+  const handleClick = (value) => {
+    setDestination(value);
+  };
+
   const destinations = data.destinations.map((destination) => {
-    console.log(destination.images.png);
     return (
       <Destination
         key={destination.name}
@@ -13,6 +19,7 @@ function DestinationPage() {
         description={destination.description}
         distance={destination.distance}
         travel={destination.travel}
+        onClick={handleClick}
       />
     );
   });
@@ -24,7 +31,7 @@ function DestinationPage() {
         <h2>
           <span className="page-number">01</span> PICK YOUR DESTINATION
         </h2>
-        {destinations[0]}
+        {destinations[destination]}
       </div>
     </div>
   );

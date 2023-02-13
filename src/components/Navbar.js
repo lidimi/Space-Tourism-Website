@@ -1,4 +1,4 @@
-import navIcon from "../assets/shared/logo.svg";
+import navIcon from "../assets/logo.svg";
 
 function Navbar() {
   return (

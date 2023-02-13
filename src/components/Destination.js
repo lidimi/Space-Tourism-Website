@@ -7,10 +7,20 @@ function Destination(props) {
         <img src={props.src} alt="" />
       </div>
       <div className="destination-about">
-        <DestinationNav />
+        <DestinationNav handleClick={props.onClick} />
         <h3>{props.title}</h3>
         <p>{props.description}</p>
         <div className="line"></div>
+        <div className="destination-about-details">
+          <div className="details-distance">
+            <h3>AVG. DISTANCE</h3>
+            <p>{props.distance}</p>
+          </div>
+          <div className="details-travel">
+            <h3>EST. TRAVEL TIME</h3>
+            <p>{props.travel}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
