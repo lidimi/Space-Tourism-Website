@@ -164,7 +164,7 @@ img {
   background-size: cover;
 }
 
-.destination-page h2 {
+.page-title {
   margin-top: 4.7rem;
   margin-bottom: 4rem;
   color: var(--white);
@@ -239,6 +239,74 @@ img {
   font-size: 1.75rem;
   text-transform: uppercase;
   margin-top: 0.75rem;
+}
+
+/* CREWPAGE  */
+
+.crew-page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(../public/assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crew {
+  max-width: 75%;
+  margin: 0 auto;
+  font-family: "Bellefair", serif;
+}
+.crew-person {
+  padding-top: 4rem;
+  width: 50%;
+  position: relative;
+}
+
+.crew-role {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.crew-name {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.7rem;
+}
+
+.crew-bio {
+  font-size: 1.1rem;
+  font-family: "Barlow", sans-serif;
+  color: var(--pale-blue);
+  line-height: 32px;
+  margin-bottom: 4rem;
+}
+
+.crew-img {
+  position: absolute;
+  bottom: 0;
+  right: 9rem;
+}
+
+.crew-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  max-width: 8.25rem;
+}
+
+.crew-nav--btn {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  opacity: 0.15;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* ACTIVE STATES  */
