@@ -1,9 +1,10 @@
 import DestinationPage from "./pages/DestinationPage";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <div className="app">
-      <DestinationPage />
+      <Homepage />
     </div>
   );
 }

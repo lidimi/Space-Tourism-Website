@@ -158,7 +158,7 @@ img {
 .destination-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../public/assets/destination/background-destination-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,11 +191,11 @@ img {
 }
 
 .destination {
-  margin-left: 14rem;
-  margin-top: 4rem;
-  margin-right: 10rem;
+  max-width: 60%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .destination-about {
@@ -242,6 +242,10 @@ img {
 }
 
 /* ACTIVE STATES  */
+
+.active {
+  color: white;
+}
 
 ul li:hover {
   cursor: pointer;

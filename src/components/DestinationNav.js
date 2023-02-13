@@ -1,21 +1,26 @@
+import { useState } from "react";
+
 function DestinationNav({ handleClick }) {
+  const [active, setActive] = useState(0);
+
   const destinations = [
-    { value: 0, title: "Moon" },
-    { value: 1, title: "Mars" },
-    { value: 2, title: "Europa" },
-    { value: 3, title: "Titan" },
+    { id: 0, title: "Moon" },
+    { id: 1, title: "Mars" },
+    { id: 2, title: "Europa" },
+    { id: 3, title: "Titan" },
   ];
 
   const setDestination = (e) => {
-    handleClick(e.target.value);
+    handleClick(e.target.id);
   };
 
   const destinationList = destinations.map((destination) => {
     return (
       <li
-        key={destination.title}
-        value={destination.value}
+        key={destination.id}
+        id={destination.id}
         onClick={setDestination}
+        className={active === destination.id ? "active" : ""}
       >
         {destination.title}
       </li>
