@@ -321,7 +321,7 @@ img {
 }
 
 .active-btn {
-  background-color: white;
+  opacity: 1;
 }
 
 ul li:hover {

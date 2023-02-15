@@ -5,7 +5,7 @@ import CrewPage from "./pages/CrewPage";
 function App() {
   return (
     <div className="app">
-      <DestinationPage />
+      <CrewPage />
     </div>
   );
 }
