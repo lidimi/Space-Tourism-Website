@@ -20,6 +20,7 @@ function DestinationPage() {
         distance={destination.distance}
         travel={destination.travel}
         onClick={handleClick}
+        currentDestination={destination.name}
       />
     );
   });

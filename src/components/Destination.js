@@ -7,7 +7,10 @@ function Destination(props) {
         <img src={props.src} alt="" />
       </div>
       <div className="destination-about">
-        <DestinationNav handleClick={props.onClick} />
+        <DestinationNav
+          handleClick={props.onClick}
+          currentDestination={props.currentDestination}
+        />
         <h3>{props.title}</h3>
         <p>{props.description}</p>
         <div className="line"></div>

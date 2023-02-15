@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-function DestinationNav({ handleClick }) {
-  const [active, setActive] = useState(0);
-
+function DestinationNav({ handleClick, currentDestination }) {
   const destinations = [
     { id: 0, title: "Moon" },
     { id: 1, title: "Mars" },
@@ -10,17 +6,19 @@ function DestinationNav({ handleClick }) {
     { id: 3, title: "Titan" },
   ];
 
-  const setDestination = (e) => {
-    handleClick(e.target.id);
-  };
-
   const destinationList = destinations.map((destination) => {
+    const setDestination = (e) => {
+      handleClick(e.target.id);
+    };
+
+    console.log(currentDestination);
+
     return (
       <li
         key={destination.id}
         id={destination.id}
         onClick={setDestination}
-        className={active === destination.id ? "active" : ""}
+        className={currentDestination === destination.title ? "active" : ""}
       >
         {destination.title}
       </li>

@@ -190,6 +190,10 @@ img {
   margin-bottom: 3.2rem;
 }
 
+.destination-list li {
+  padding-bottom: 0.7rem;
+}
+
 .destination {
   max-width: 60%;
   margin: 0 auto;
@@ -313,6 +317,11 @@ img {
 
 .active {
   color: white;
+  border-bottom: 3px solid white;
+}
+
+.active-btn {
+  background-color: white;
 }
 
 ul li:hover {
