@@ -5,8 +5,8 @@ function Homepage() {
   return (
     <div className="homepage">
       <Navbar />
-      <div className="homepage-content">
-        <div className="homepage-about">
+      <main className="homepage-content">
+        <header className="homepage-about">
           <p className="homepage-about-travel">SO, YOU WANT TO TRAVEL TO</p>
           <h1>SPACE</h1>
           <p className="homepage-about-desc">
@@ -15,13 +15,13 @@ function Homepage() {
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
           </p>
-        </div>
+        </header>
         <div className="homepage-button">
           <div className="homepage-btn">
             <Link to="/destination">EXPLORE</Link>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

@@ -1,7 +1,9 @@
 function MobileNav({ links }) {
   return (
     <div className="mobile-links">
-      <ul className="mobile-links-list">{links}</ul>
+      <nav>
+        <ul className="mobile-links-list">{links}</ul>
+      </nav>
     </div>
   );
 }
