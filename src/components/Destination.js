@@ -4,7 +4,7 @@ function Destination(props) {
   return (
     <div className="destination">
       <div className="destination-image">
-        <img src={props.src} alt="" />
+        <img className="destination-image--img" src={props.src} alt="" />
       </div>
       <div className="destination-about">
         <DestinationNav

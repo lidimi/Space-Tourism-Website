@@ -228,6 +228,11 @@ a {
   max-width: 40%;
 }
 
+.destination-image--img {
+  animation: rotate 100s;
+  animation-iteration-count: infinite;
+}
+
 .destination-about h3 {
   font-family: "Bellefair", serif;
   font-size: 6.2rem;
@@ -448,6 +453,16 @@ ul li:hover {
 .destination-list li:hover {
   color: var(--white);
   border-bottom: 3px solid hsla(0, 0%, 100%, 0.2);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 1300px) {

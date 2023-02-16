@@ -5,7 +5,7 @@ import TechnologyPage from "./pages/TechnologyPage";
 import { Route, Routes } from "react-router-dom";
 
 // TODO:
-// MEDIA QUERIES
+// MEDIA QUERIES FOR MOBILE DEVICES
 // SWIPE FOR MOBILE DEVICES?
 
 function App() {
