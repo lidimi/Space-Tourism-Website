@@ -6,7 +6,7 @@ import TechnologyPage from "./pages/TechnologyPage";
 function App() {
   return (
     <div className="app">
-      <TechnologyPage />
+      <Homepage />
     </div>
   );
 }

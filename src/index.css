@@ -346,6 +346,7 @@ img {
   font-family: "Bellefair", serif;
   font-size: 2rem;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
+  transition: all 300ms ease;
 }
 
 .technology {
@@ -384,6 +385,21 @@ img {
 .active {
   color: white;
   border-bottom: 3px solid white;
+  transform: all 300ms ease;
+}
+
+.crew-nav--btn:hover {
+  opacity: 0.5;
+}
+
+.technologies-nav--btn:hover {
+  border-color: white;
+}
+
+.homepage-btn:hover {
+  -webkit-box-shadow: 0px 3px 0px 76px rgba(255, 255, 255, 0.04);
+  -moz-box-shadow: 0px 3px 0px 76px rgba(255, 255, 255, 0.04);
+  box-shadow: 0px 3px 0px 76px rgba(255, 255, 255, 0.04);
 }
 
 .active-btn {
@@ -404,4 +420,5 @@ ul li:hover {
 
 .destination-list li:hover {
   color: var(--white);
+  border-bottom: 3px solid hsla(0, 0%, 100%, 0.2);
 }
