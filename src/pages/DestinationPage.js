@@ -26,14 +26,12 @@ function DestinationPage() {
   });
 
   return (
-    <div className="app">
-      <div className="destination-page">
-        <Navbar />
-        <h2 className="page-title">
-          <span className="page-number">01</span> PICK YOUR DESTINATION
-        </h2>
-        {destinations[destination]}
-      </div>
+    <div className="destination-page">
+      <Navbar />
+      <h2 className="page-title">
+        <span className="page-number">01</span> PICK YOUR DESTINATION
+      </h2>
+      {destinations[destination]}
     </div>
   );
 }

@@ -4,6 +4,11 @@ import CrewPage from "./pages/CrewPage";
 import TechnologyPage from "./pages/TechnologyPage";
 import { Route, Routes } from "react-router-dom";
 
+// TODO:
+// MEDIA QUERIES
+// HOME BUTTON ROUTING
+// SWIPE FOR MOBILE DEVICES?
+
 function App() {
   return (
     <div className="app">

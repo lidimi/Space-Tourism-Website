@@ -11,18 +11,18 @@ function DestinationNav({ handleClick, currentDestination }) {
       handleClick(e.target.id);
     };
 
-    console.log(currentDestination);
-
     return (
       <li
         key={destination.id}
         id={destination.id}
-        onClick={setDestination}
         className={
           currentDestination === destination.title ? "active-destination" : ""
         }
+        onClick={setDestination}
       >
-        {destination.title}
+        <button id={destination.id} className="destination-nav--btn">
+          {destination.title}{" "}
+        </button>
       </li>
     );
   });
