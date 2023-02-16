@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Technology from "../components/Technology";
 import data from "../data.json";
 
 function TechnologyPage() {
+  const [technology, setTechnology] = useState(0);
+
   const navigationButtons = [
     { id: 0, textContent: "1" },
     { id: 1, textContent: "2" },
@@ -11,7 +14,15 @@ function TechnologyPage() {
 
   const buttons = navigationButtons.map((button) => {
     return (
-      <button className="technologies-nav--btn" key={button.id}>
+      <button
+        className={`technologies-nav--btn ${
+          technology == button.id ? `technologies-nav--btn-active` : ``
+        }`}
+        key={button.id}
+        onClick={() => {
+          setTechnology(button.id);
+        }}
+      >
         {button.textContent}
       </button>
     );
@@ -20,6 +31,7 @@ function TechnologyPage() {
   const technologies = data.technology.map((technology) => {
     return (
       <Technology
+        key={technology.name}
         name={technology.name}
         desc={technology.description}
         src={technology.images.portrait}
@@ -35,7 +47,9 @@ function TechnologyPage() {
       </h2>
       <div className="technologies">
         <div className="technologies-nav">{buttons}</div>
-        <div className="technologies-technology">{technologies[0]}</div>
+        <div className="technologies-technology">
+          {technologies[technology]}
+        </div>
       </div>
     </div>
   );

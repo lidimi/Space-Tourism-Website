@@ -389,6 +389,10 @@ img {
 .active-btn {
   opacity: 1;
 }
+.technologies-nav--btn-active {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
 
 ul li:hover {
   cursor: pointer;
