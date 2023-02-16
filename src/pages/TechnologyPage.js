@@ -41,7 +41,7 @@ function TechnologyPage() {
   });
 
   return (
-    <div className="technology-page">
+    <section className="technology-page">
       <Navbar />
       <h2 className="page-title">
         <span className="page-number">03</span> SPACE LAUNCH 101
@@ -52,7 +52,7 @@ function TechnologyPage() {
           {technologies[technology]}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

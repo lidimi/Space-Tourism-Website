@@ -26,13 +26,13 @@ function DestinationPage() {
   });
 
   return (
-    <div className="destination-page">
+    <section className="destination-page">
       <Navbar />
       <h2 className="page-title">
         <span className="page-number">01</span> PICK YOUR DESTINATION
       </h2>
       {destinations[destination]}
-    </div>
+    </section>
   );
 }
 

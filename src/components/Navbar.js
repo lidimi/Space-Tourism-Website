@@ -44,7 +44,11 @@ function Navbar() {
         </nav>
       </div>
       <div className="navbar-mobile-nav">
-        <button className="mobile-nav--button" onClick={handleClick}>
+        <button
+          className="mobile-nav--button"
+          onClick={handleClick}
+          aria-label={isOpen ? "close-menu" : "open-menu"}
+        >
           <img src={isOpen ? iconClose : iconHamburger} alt="" />
         </button>
         {isOpen && <MobileNav links={navLinks} />}

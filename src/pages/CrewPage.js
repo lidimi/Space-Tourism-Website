@@ -24,13 +24,13 @@ function CrewPage() {
   });
 
   return (
-    <div className="crew-page">
+    <section className="crew-page">
       <Navbar />
       <h2 className="page-title">
         <span className="page-number">02</span> MEET YOUR CREW
       </h2>
       {displayCrew[crewPerson]}
-    </div>
+    </section>
   );
 }
 
