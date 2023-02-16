@@ -30,6 +30,11 @@ img {
   max-height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .app {
   min-width: 100vw;
   min-height: 100vh;
@@ -138,6 +143,10 @@ img {
 
 .desktop-nav li {
   position: relative;
+}
+
+.desktop-nav li a {
+  padding-bottom: 2.3rem;
 }
 
 .desktop-nav li::after {
@@ -383,6 +392,10 @@ img {
 /* ACTIVE STATES  */
 
 .active {
+  border-bottom: 2px solid white;
+}
+
+.active-destination {
   color: white;
   border-bottom: 3px solid white;
   transform: all 300ms ease;

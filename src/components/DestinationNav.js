@@ -18,7 +18,9 @@ function DestinationNav({ handleClick, currentDestination }) {
         key={destination.id}
         id={destination.id}
         onClick={setDestination}
-        className={currentDestination === destination.title ? "active" : ""}
+        className={
+          currentDestination === destination.title ? "active-destination" : ""
+        }
       >
         {destination.title}
       </li>

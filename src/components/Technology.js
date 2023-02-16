@@ -7,7 +7,7 @@ function Technology({ name, desc, src }) {
         <p className="technology-description">{desc}</p>
       </div>
       <div className="technology-img">
-        <img src={src} alt={`picture of ${name}`} />
+        <img src={src} alt={`${name}`} />
       </div>
     </div>
   );

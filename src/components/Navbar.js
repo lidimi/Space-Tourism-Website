@@ -1,4 +1,5 @@
 import navIcon from "../assets/logo.svg";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -13,16 +14,24 @@ function Navbar() {
         <nav>
           <ul className="desktop-nav">
             <li>
-              <span className="navigation--number">00</span> HOME
+              <NavLink to="/">
+                <span className="navigation--number">00</span> HOME
+              </NavLink>
             </li>
             <li>
-              <span className="navigation--number">01</span> DESTINATION
+              <NavLink to="/destination">
+                <span className="navigation--number">01</span> DESTINATION
+              </NavLink>
             </li>
             <li>
-              <span className="navigation--number">02</span> CREW
+              <NavLink to="/crew">
+                <span className="navigation--number">02</span> CREW
+              </NavLink>
             </li>
             <li>
-              <span className="navigation--number">03</span> TECHNOLOGY
+              <NavLink to="/technology">
+                <span className="navigation--number">03</span> TECHNOLOGY
+              </NavLink>
             </li>
           </ul>
         </nav>

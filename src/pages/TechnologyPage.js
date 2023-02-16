@@ -16,7 +16,7 @@ function TechnologyPage() {
     return (
       <button
         className={`technologies-nav--btn ${
-          technology == button.id ? `technologies-nav--btn-active` : ``
+          technology === button.id ? `technologies-nav--btn-active` : ``
         }`}
         key={button.id}
         onClick={() => {
