@@ -6,7 +6,6 @@ import { Route, Routes } from "react-router-dom";
 
 // TODO:
 // MEDIA QUERIES
-// HOME BUTTON ROUTING
 // SWIPE FOR MOBILE DEVICES?
 
 function App() {

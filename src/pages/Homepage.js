@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -16,7 +17,9 @@ function Homepage() {
           </p>
         </div>
         <div className="homepage-button">
-          <button className="homepage-btn">EXPLORE</button>
+          <div className="homepage-btn">
+            <Link to="/destination">EXPLORE</Link>
+          </div>
         </div>
       </div>
     </div>

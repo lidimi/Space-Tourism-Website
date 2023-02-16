@@ -85,14 +85,18 @@ a {
 }
 
 .homepage-btn {
-  display: block;
   width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 1/1;
   border: none;
   border-radius: 50%;
   font-family: "Bellefair", serif;
   font-size: 2rem;
   cursor: pointer;
+  background-color: var(--white);
+  color: var(--dark-blue);
 }
 
 /* NAVBAR  */
