@@ -35,6 +35,7 @@ function TechnologyPage() {
         name={technology.name}
         desc={technology.description}
         src={technology.images.portrait}
+        landscapeSrc={technology.images.landscape}
       />
     );
   });
